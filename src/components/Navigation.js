@@ -1,12 +1,46 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Home from "./Home";
 import WesworthConstruction from "../WCG_White.png";
+import styled from "styled-components";
 
-export default class NavBar extends React.Component {
+const NavWrapper = styled.section`
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #404041;
+	color: white;
+	height: 15vh;
+`;
+
+// .nav-logo {
+// 	width: 20%;
+// 	border: 10px;
+// 	padding: 5px 25px 10px 10px;
+// 	float: left;
+// }
+
+// .nav-titles ul li {
+// 	float: right;
+// 	list-style: none;
+// 	padding: 10px;
+// 	font-family: "futuraStdBold";
+// 	font-size: 1.1vw;
+// }
+
+// .nav-titles ul li a {
+// 	text-decoration: none;
+// }
+
+// .link {
+// 	color: white;
+// }
+
+export default class NavBar extends Component {
 	render() {
 		return (
-			<div className="navbar">
+			<NavWrapper>
 				<div className="nav-logo">
 					<Link to={"/"} className="link">
 						<img
@@ -40,7 +74,7 @@ export default class NavBar extends React.Component {
 						</li>
 					</ul>
 				</div>
-			</div>
+			</NavWrapper>
 		);
 	}
 }
