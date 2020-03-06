@@ -14,11 +14,15 @@ const NavWrapper = styled.section`
 	height: 15vh;
 `;
 
+const NavLink = styled.link`
+	width: 20%;
+	border: 10px;
+	padding: 5px 25px 10px 10px;
+	float: left;
+`;
+
 // .nav-logo {
-// 	width: 20%;
-// 	border: 10px;
-// 	padding: 5px 25px 10px 10px;
-// 	float: left;
+
 // }
 
 // .nav-titles ul li {
@@ -41,7 +45,7 @@ export default class NavBar extends Component {
 	render() {
 		return (
 			<NavWrapper>
-				<div className="nav-logo">
+				<div>
 					<Link to={"/"} className="link">
 						<img
 							src={WesworthConstruction}
