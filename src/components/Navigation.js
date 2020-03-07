@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Home from "./Home";
+import Electric from "./Electric";
 import WesworthConstruction from "../WCG_White.png";
 import styled from "styled-components";
 
@@ -14,12 +15,12 @@ const NavWrapper = styled.section`
 	height: 15vh;
 `;
 
-const NavLink = styled.link`
-	width: 20%;
-	border: 10px;
-	padding: 5px 25px 10px 10px;
-	float: left;
-`;
+// const NavLink = styled.link`
+// 	width: 20%;
+// 	border: 10px;
+// 	padding: 5px 25px 10px 10px;
+// 	float: left;
+// `;
 
 // .nav-logo {
 
@@ -68,7 +69,7 @@ export default class NavBar extends Component {
 						</li>
 						<li>
 							<Link to={"/electric"} className="link">
-								ELECTRIC
+								{Electric} ELECTRIC
 							</Link>
 						</li>
 						<li>
